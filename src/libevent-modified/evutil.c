@@ -224,7 +224,7 @@ evutil_ersatz_socketpair(int family, int type, int protocol,
 #endif
 	test_protocol = protocol || test_protocol;
 	
-	if (test_protocol)) {
+	if (test_protocol) {
 		EVUTIL_SET_SOCKET_ERROR(ERR(EAFNOSUPPORT));
 		return -1;
 	}
